@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #f6f9fc;
+  color: #333;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+nav.navbar {
+  background: #1f2937;
+  color: white;
+  padding: 12px 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav.navbar h1 {
+  display: inline-block;
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+nav.navbar .menu {
+  float: right;
+}
+
+nav.navbar a, nav.navbar button {
+  margin-left: 15px;
+  color: white;
+  text-decoration: none;
+  font-size: 0.95rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+nav.navbar a:hover, nav.navbar button:hover {
+  text-decoration: underline;
+}
+
+header {
+  background: linear-gradient(135deg, #f43f5e, #ec4899);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+header h2 {
+  margin-top: 0;
+  font-size: 2rem;
+}
+
+main {
+  margin-top: 30px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #db2777;
+}
+
+code {
+  background: #f3f4f6;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: monospace;
+}
+
+pre {
+  background: #111827;
+  color: #d1d5db;
+  padding: 12px;
+  border-radius: 5px;
+  overflow-x: auto;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #555;
+  font-size: 0.9rem;
+}

@@ -1,11 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>node</title>
+  <title>ทดลองโปรเจกต์ CLI + IDE</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f4f4;
+      color: #333;
+      padding: 40px;
+      max-width: 800px;
+      margin: auto;
+    }
+    h1 {
+      color: #cc0000;
+      text-align: center;
+    }
+    h2 {
+      color: #333;
+      margin-top: 30px;
+    }
+    code {
+      background: #eee;
+      padding: 3px 6px;
+      border-radius: 4px;
+      font-family: monospace;
+    }
+    .section {
+      background: white;
+      border-radius: 8px;
+      padding: 20px;
+      margin-top: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+  </style>
 </head>
 <body>
-  <h1>สวัสดีจาก Node.js + Express!</h1>
+  <h1>💻 โปรเจกต์ CLI + IDE</h1>
+
+  <div class="section">
+    <h2>✅ การสร้างโปรเจกต์</h2>
+    <p>เริ่มต้นด้วยการใช้ <code>npm init -y</code> เพื่อสร้างโปรเจกต์ Node.js</p>
+    <p>สร้างไฟล์ <code>index.js</code> และใส่โค้ดของคุณ</p>
+    <p>เพิ่มคำสั่งใน <code>package.json</code>:</p>
+    <pre><code>"start": "node index.js"</code></pre>
+    <p>รันโปรเจกต์ด้วยคำสั่ง: <code>npm start</code></p>
+  </div>
+
+  <div class="section">
+    <h2>🔄 การควบคุมเวอร์ชัน (Version Control)</h2>
+    <p>ใช้คำสั่ง Git เพื่อจัดการเวอร์ชันของโค้ด:</p>
+    <ul>
+      <li><code>git init</code> → สร้าง Git repo</li>
+      <li><code>git add .</code> → เพิ่มไฟล์ทั้งหมด</li>
+      <li><code>git commit -m "Initial commit"</code></li>
+      <li><code>git push origin main</code> → ส่งขึ้น GitHub</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>🐞 การ Debug</h2>
+    <p>สามารถ debug ได้หลายวิธี:</p>
+    <ul>
+      <li>ใช้ <code>console.log()</code> เพื่อตรวจค่าตัวแปร</li>
+      <li>ใช้ Debugger ของ VS Code (F5)</li>
+      <li>ตั้ง Breakpoint ที่ไฟล์ <code>index.js</code></li>
+      <li>ใช้คำสั่ง <code>debugger;</code> หยุดโค้ด</li>
+    </ul>
+    <p>อย่าลืมตั้งค่าไฟล์ <code>.vscode/launch.json</code> สำหรับการดีบัก</p>
+  </div>
+
+  <p style="text-align:center; margin-top: 40px;">👨‍💻 พัฒนาโดยผ่าน CLI และ VS Code IDE</p>
 </body>
 </html>
